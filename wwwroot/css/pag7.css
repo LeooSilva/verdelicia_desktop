@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Container principal */
+#container7 {
+    width: 150%;
+    height: 100vh;
+    margin-top: -140px; 
+    margin-left: -20%;
+    background-color: #96c434;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Barra superior */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.profile-pic {
+    width: 70px;
+    height: 70px;
+    margin-bottom: -10px;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: colorAndGrow 2s ease-in-out forwards;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-info {
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.icons1 {
+    display: flex;
+    gap: 15px;
+}
+
+.icon1 {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+
+
+/* Logo */
+.logo {
+    width: 980px;
+    text-align: center;
+    margin-top: -290px;
+    margin-left: 12em;
+    background-color: transparent;
+    animation: colorAndGrow 2s ease-in-out forwards;
+}
+
+.logo1{
+    margin-left: em;
+}
+
+/* Container do parágrafo */
+.containerpa {
+    display: flex;
+    justify-content: center;
+    color: #067302;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 5em;
+    animation: colorAndGrow 2s ease-in-out forwards;
+    text-transform: uppercase; /* Texto em maiúsculas */
+    font-weight: bold; /* Texto em negrito */
+}
+
+p {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-right: 15%;
+}
+
+/* Imagem dos legumes */
+.containerlegumes {
+    display: flex;
+    justify-content: center;
+    margin-top: -200px;
+    margin-right: 130px;
+    background-color: transparent;
+    animation: colorAndGrow 2s ease-in-out forwards;
+}
+
+.imgverde {
+    border: 7px solid white;
+    border-radius: 10px;
+    max-width: 90%;
+    height: auto;
+}
+
+/* Botão */
+.container-btn {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    margin-top: -12em;
+    margin-right: 8%;
+    animation: colorAndGrow 2s ease-in-out forwards;
+    transition: box-shadow 300ms ease-in-out, background-color 300ms ease-in-out;
+}
+
+.btn {
+    background-color: #98B56D;
+    border-radius: 15px;
+    width: 250px;
+    height: 50px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border: 1px solid #98B56D;
+}
+
+.btn:hover {
+    box-shadow: 0 0 40px 40px rgba(15, 15, 15, 0.7) inset; /* Sombra com tom vermelho */
+    background-color: #91da3283; /* Tonalidade um pouco mais clara de preto */
+    transform: scale(1.05); /* Aumenta o tamanho do botão em 5% */
+}
+
+
+
+.seta {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    right:30px;
+    top: 15px;
+}
+
+span {
+    font-weight: bold;
+}
+
+/* Barra inferior */
+.containerbarra {
+    width: 100%;
+    height: 60px;
+    background-color: #007808;
+    position: relative;
+    top: -24%;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    width: 97%;
+    transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
+    padding: 0 0px 10px 5px;
+
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    width: 25px;
+    height: 34px;
+    margin-top: px;
+    margin-right: 75px;
+    padding-top: 2px;
+    position: relative;
+    top:  5px;
+    transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
+
+}
+
+.icon + p {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+} 
+
+
+/* Remove o sublinhado e a cor azul dos links dentro dos ícones */
+.icon-item a {
+    text-decoration: none;
+    color: inherit; /* Mantém a cor do texto igual ao do seu elemento pai */
+  }
+  
+  /* Ajuste a cor do texto, se necessário */
+  .icon-item a p {
+    color: #ffffff; /* Ou a cor que preferir */
+  }
+
+  .icon-item:hover .icon {
+    transform: scale(1.1); /* Aumenta o tamanho do ícone em 10% no hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra preta com leve desfoque */
+  }
+  
+
+  .perfil {
+    position: relative;
+    left: -30px;
+  }
+
+  .carrinho {
+    position: relative;
+    left: -30px;
+  }
+  
+  .home {
+    position: relative;
+    right: 30px;
+  }
+  
+  .for {
+    position: relative;
+    padding-right: 60px;
+  }
+  
+  .feedback{
+    position: relative;
+    right: 30px;
+  }
+
+
+  @keyframes colorAndGrow {
+    0% {
+        transform: scale(0); /* Tamanho inicial */
+    }
+    100% {
+        transform: scale(1.0); /* Aumenta o tamanho em 20% */
+    }
+  }
